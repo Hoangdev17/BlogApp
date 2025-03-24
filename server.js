@@ -16,7 +16,7 @@ app.use(express.json());
 
 // Cấu hình CORS - cho phép tất cả các nguồn truy cập (bạn có thể tùy chỉnh lại nếu cần)
 app.use(cors({
-  origin: 'http://localhost:3000', // Chỉ định chính xác origin frontend
+  origin: 'https://blog-app-vert-xi.vercel.app/', // Chỉ định chính xác origin frontend
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Các phương thức HTTP cho phép
   allowedHeaders: ['Content-Type', 'Authorization'], // Các header cho phép
   credentials: true, // Cho phép gửi cookie và Authorization headers
