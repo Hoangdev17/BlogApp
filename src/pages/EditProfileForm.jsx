@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import axios from '../services/axios.js';
 import { Form, Input, Button, Upload, message, Avatar } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
 

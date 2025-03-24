@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import PostForm from './PostForm.jsx';
-import axios from 'axios';
+import axios from '../services/axios.js';
 
 const EditPostPage = () => {
   const { id } = useParams();

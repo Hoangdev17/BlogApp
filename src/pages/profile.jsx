@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../services/axios.js';
 import { Avatar, Card, List, Typography, Skeleton, Space, Modal, Form, Input, message, Button } from 'antd';
 import PostForm from './PostForm';
 import EditProfileForm from './EditProfileForm.jsx';

@@ -1,7 +1,7 @@
 import React from 'react';
 import PostForm from './PostForm.jsx';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../services/axios.js';
 
 const CreatePostPage = () => {
   const navigate = useNavigate();
