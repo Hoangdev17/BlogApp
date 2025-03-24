@@ -30,7 +30,7 @@ const EditProfileForm = ({ user, onUpdate }) => {
         formData.append('image', selectedFile); // 👈 phải là 'image' ở đây
       }
 
-      const res = await axios.put('http://localhost:5000/api/auth/me', formData, {
+      const res = await axios.put('https://blogapp-4h26.onrender.com/api/auth/me', formData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
           'Content-Type': 'multipart/form-data',

@@ -14,7 +14,7 @@ const CreatePostPage = () => {
       formData.append('content', data.content);
       if (data.image) formData.append('image', data.image);
 
-      await axios.post('http://localhost:5000/api/posts', formData, {
+      await axios.post('https://blogapp-4h26.onrender.com/api/posts', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${token}`, 

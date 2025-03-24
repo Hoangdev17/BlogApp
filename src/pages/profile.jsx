@@ -33,7 +33,7 @@ const ProfilePage = () => {
       formData.append('tags', data.tags);
       if (data.image) formData.append('image', data.image);
   
-      const res = await axios.put(`http://localhost:5000/api/posts/${editingPost._id}`, formData, {
+      const res = await axios.put(`https://blogapp-4h26.onrender.com/api/posts/${editingPost._id}`, formData, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       });
   
@@ -62,14 +62,14 @@ const ProfilePage = () => {
         setLoading(true);
         
         // Fetch user profile
-        const userRes = await axios.get('http://localhost:5000/api/auth/me', {
+        const userRes = await axios.get('https://blogapp-4h26.onrender.com/api/auth/me', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUser(userRes.data);
         console.log(userRes.data);
 
         // Fetch posts
-        const postsRes = await axios.get(`http://localhost:5000/api/posts?author=${id}`);
+        const postsRes = await axios.get(`https://blogapp-4h26.onrender.com/api/posts?author=${id}`);
         setPosts(postsRes.data);
       } catch (error) {
         console.error('Error fetching data:', error);
